@@ -9,8 +9,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 SIMILAR_ACCOUNT = "https://www.instagram.com/chefsteps/"
-USERNAME = "knw99325@kisoq.com"
-PASSWORD = "123456789Asd"
+USERNAME = "xxxxxx"
+PASSWORD = "xxxxxxx"
 goal = 100
 
 class InstaFollower:
