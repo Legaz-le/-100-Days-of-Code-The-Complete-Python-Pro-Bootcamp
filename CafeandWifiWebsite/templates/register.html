@@ -1,0 +1,69 @@
+{% include 'base.html' %}
+<body>
+     {% include 'navbar.html' %}
+        <div class="container">
+        <div class="register-container">
+          <h2>Register</h2>
+          <form id="registerForm">
+            <!-- Full Name Field -->
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <!-- Password Field -->
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+            </div>
+            <!-- Confirm Password Field -->
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+            <!-- Register Button -->
+            <button type="submit" class="btn btn-success btn-register">Register</button>
+          </form>
+          <!-- Login Link -->
+          <div class="login-link">
+            Already have an account? <a href="#">Login</a>
+          </div>
+        </div>
+        </div>
+     {% include 'footer.html' %}
+
+  <!-- Bootstrap JS (Optional, if needed for interactivity) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get form values
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Basic validation
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+      }
+
+      // Log form data (you can replace this with an API call)
+      console.log({
+        fullName,
+        email,
+        password,
+      });
+
+      alert('Registration successful! (Mock)');
+    });
+  </script>
+
+</body>

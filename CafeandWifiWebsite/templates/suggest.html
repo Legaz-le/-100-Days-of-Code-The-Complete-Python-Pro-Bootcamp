@@ -1,0 +1,70 @@
+{% include 'base.html' %}
+<body>
+     {% include 'navbar.html' %}
+      <div id="suggest">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-7 col-sm-10">
+      <h1>Add new Place</h1>
+      <p>Let freelancers, digital nomads, and other remote workers know about a new work-friendly venue!</p>
+      <form class="new_place" id="new_place" enctype="multipart/form-data" action="/suggests" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="FDlsquMhEMO5-KADtoHv_5VFCyggMYVmwf2F47spUp0HcZkeMskl1s_SFeLw30gC9Ju-f-WXXyE2sabb9nkFDQ" autocomplete="off"><section class="pt-0" id="step1">
+      <div class="form-group">
+      <label>
+      <h2>1. Search for the venue</h2>
+      </label>
+      <input class="form-control pac-target-input" id="geocomplete" type="text" placeholder="Enter a location" autocomplete="off">
+      <input data-geo="place_id" autocomplete="off" type="hidden" name="place[google_place_gid]" id="place_google_place_gid">
+      </div>
+      </section>
+      <section class="pt-0" id="step_exists">
+      <h3>
+      This place is already listed! Check it out
+      <a class="text-primary" href="false">here</a>
+      </h3>
+      </section>
+      <section class="pt-0" id="step2">
+      <div class="form-group">
+      <label>
+      <h2>2. Check the location</h2>
+      </label>
+      <div id="geocomplete-map"><div style="height: 100%; width: 100%;"><div style="overflow: hidden;"></div></div></div>
+      </div>
+      <div class="form-group">
+      <label>
+      <h2>3. Choose a photo</h2>
+      </label>
+      <select class="image-picker show-html" name="place[google_photo]" id="place_google_photo"></select>
+      </div>
+      </section>
+      <!-- Basic venue information -->
+      <section class="pt-0" id="step3">
+      <h2>Venue Information</h2>
+      <!-- General -->
+      <div class="form-group">
+      <label>Name</label>
+      <input required="required" data-geo="name" class="form-control" type="text" name="place[name]" id="place_name">
+      </div>
+      <!-- Location -->
+      <div class="form-group">
+      <label>Street</label>
+      <input autocomplete="off" type="hidden" name="place[location][street_number]" id="place_location_street_number">
+      <input required="required" class="form-control" type="text" name="place[location][address]" id="place_location_address">
+      </div>
+      <input data-geo="postal_code" autocomplete="off" type="hidden" name="place[location][postal_code]" id="place_location_postal_code">
+      <input value="0" data-geo="lat" autocomplete="off" type="hidden" name="place[location][lat]" id="place_location_lat">
+      <input value="0" data-geo="lng" autocomplete="off" type="hidden" name="place[location][lng]" id="place_location_lng">
+      <div class="hidden" id="gmaps_info"></div>
+      </section>
+      <section id="controls">
+      <div class="row">
+      <div class="col-6"><button name="button" type="button" class="col btn btn-lg btn-large btn-default" rel="retry">Retry</button></div>
+      <div class="col-6"><button name="button" type="button" class="col btn btn-lg btn-large btn-success" rel="next">Next</button></div>
+      </div>
+      </section>
+      </form></div>
+      </div>
+      </div>
+      </div>
+      {% include 'footer.html' %}
+
+</body>

@@ -1,0 +1,15 @@
+{% include 'base.html'%}
+<body>
+      <div class="p-5 text-center bg-body-tertiary rounded-1" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D'); background-size: cover; background-position: center;">
+        <h1 class="text-body-emphasis">Co-work,</h1>
+        <h1 class="text-body-emphasis">Everywhere</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-muted">
+          From coffee shops to hotel lobbies, discover everyday places to work and connect.
+        </p>
+        <div class="d-inline-flex gap-2 mb-5">
+          <button class="btn btn-lg btn-success book-now"  type="button">
+            EXPLORE CITIES<svg class="bi ms-2" width="1" height="5"><use xlink:href="{{ url_for('all_cities') }}"></use></svg>
+          </button>
+        </div>
+      </div>
+</body>

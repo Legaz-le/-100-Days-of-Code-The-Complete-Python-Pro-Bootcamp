@@ -1,0 +1,402 @@
+{% include 'base.html' %}
+<body>
+    {% include 'navbar.html' %}
+    <div class="p-5 text-center bg-body-tertiary rounded-1" style="background-image: url('{{ cafe_id.img_url}}'); background-size: cover; background-position: center;">
+        <h1 class="text-body-emphasis">{{ cafe_id.name }}</h1>
+        <p class="col-lg-8 mx-auto fs-5 text-body-emphasis">
+          From coffee shops to hotel lobbies, discover everyday places to work and connect.
+        </p>
+    </div>
+    <div class ="container mt-5">
+      <div class="row">
+        <div class="col-md-7">
+            <!-- Description -->
+            <div id="description">
+            <!-- Ad -->
+            <h2 class="pb-2">Today</h2>
+            <div class="row">
+            <div class="col-4">
+            <p class="mt-1">
+            <i class="fas fa-users"></i>
+            Visits:
+            2
+            <br>
+            <i class="fas fa-camera"></i>
+            Vibes:
+            0
+            </p>
+            </div>
+            <div class="col-8">
+            <div class="latest-vibes vibesbox text-end">
+            <a class="btn btn-success" style="margin: 0.5rem" href="/vibes/new?city=london&amp;place=store-street-espresso-hammersmith">📸</a>
+            </div>
+            </div>
+            </div>
+            <script type="text/javascript">
+            var lightbox = new SimpleLightbox('.vibesbox a', { overlayColor: 0.9, captionsData: 'titleLightbox' })
+            </script>
+
+
+            <div class="row" id="been-here">
+            <div class="col-md-4 col-lg-3">
+            <h2>Been here</h2>
+            </div>
+            <div class="col-md-8 col-lg-9">
+            <div class="criteria">
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="Edcarlos" data-bs-original-title="Edcarlos">
+            <img class="img-circle" src="/images/profiles/5223-edcarlos.jpg">
+            </span>
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="Sam Bax" data-bs-original-title="Sam Bax">
+            <img class="img-circle" src="/images/profiles/3971-sam.jpg">
+            </span>
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="Beatriz Coutinho Guimarães" data-bs-original-title="Beatriz Coutinho Guimarães" aria-describedby="popover567020">
+            <img class="img-circle" src="/images/profiles/3800-beatriz.jpg">
+            </span>
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="Nicholas Bransby-Williams" data-bs-original-title="Nicholas Bransby-Williams">
+            <img class="img-circle" src="/images/profiles/3155-nicholas.jpg">
+            </span>
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="carlos corona carrillo" data-bs-original-title="carlos corona carrillo">
+            <img class="img-circle" src="/images/profiles/3075-carlos.jpg">
+            </span>
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="Vitaliy S." data-bs-original-title="Vitaliy S.">
+            <img class="img-circle" src="/images/profiles/3072-vitaliy.jpg">
+            </span>
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="Amy H" data-bs-original-title="Amy H">
+            <img class="img-circle" src="/assets/profiles/blank-535327c66bd565773addf3077783bbfce4b00ec00e9fd257753287c682c7fa38.png">
+            </span>
+            </div>
+            </div>
+            </div>
+            <hr>
+
+            <h2>Reviews</h2>
+            <div class="review row">
+            <small class="text-gray col-12">July 05, 2024</small>
+            <p class="col-sm-10">Cool</p>
+            <div class="col-sm-2" style="text-align: right;">
+            <span data-content="Anonymous user" data-toggle="popover" aria-label="Anonymous" data-bs-original-title="Anonymous">
+            <img class="img-circle" src="/assets/profiles/blank-535327c66bd565773addf3077783bbfce4b00ec00e9fd257753287c682c7fa38.png">
+            </span>
+            </div>
+            </div>
+            <a class="black-link see_all_reviews" href="#" style="display: none;"><i class="fa fa-fw fa-caret-down"></i>
+            See all reviews
+            </a><div class="all_reviews" style="display: block;">
+            <hr>
+            <div class="review row">
+            <small class="text-gray col-12">August 07, 2023</small>
+            <p class="col-sm-10">Head upstairs for plugs and working desks, including a big table and large screen where you can do presentations (note - this is not in a separate room)</p>
+            <div class="col-sm-2" style="text-align: right;">
+            <span data-content="Anonymous user" data-toggle="popover" aria-label="Anonymous" data-bs-original-title="Anonymous">
+            <img class="img-circle" src="/assets/profiles/blank-535327c66bd565773addf3077783bbfce4b00ec00e9fd257753287c682c7fa38.png">
+            </span>
+            </div>
+            </div>
+            <hr>
+            <div class="review row">
+            <small class="text-gray col-12">July 06, 2023</small>
+            <p class="col-sm-10">75% chairs are uncomfortable: none are for working in, more cafeteria style or lounging.
+            Casual work vibe. Multiple big communal tables. Quiet background music.
+            Some plugs available but need to check before sitting.
+            Cakes for 4 and toasties for 6 quid.</p>
+            <div class="col-sm-2" style="text-align: right;">
+            <span data-content="Anonymous user" data-toggle="popover" aria-label="Anonymous" data-bs-original-title="Anonymous">
+            <img class="img-circle" src="/assets/profiles/blank-535327c66bd565773addf3077783bbfce4b00ec00e9fd257753287c682c7fa38.png">
+            </span>
+            </div>
+            </div>
+            <hr>
+            <div class="review row">
+            <small class="text-gray col-12">April 17, 2023</small>
+            <p class="col-sm-10">I was just checking the update page option.</p>
+            <div class="col-sm-2" style="text-align: right;">
+            <span data-content="Friendly Co-Worker" data-toggle="popover" aria-label="Arbaz Khan Niazi" data-bs-original-title="Arbaz Khan Niazi">
+            <img class="img-circle" src="/images/profiles/4110-arbaz.jpg">
+            </span>
+            </div>
+            </div>
+            <hr>
+            <div class="new_review_place">
+            <a class="btn btn-success leave_review" href="/users/login">Join and leave a review!</a>
+
+            </div>
+            </div>
+            <a class="black-link see_less_reviews" href="#" style="display: inline;"><i class="fa fa-fw fa-caret-up"></i>
+            See less reviews
+            </a></div>
+            <hr>
+            <div class="row">
+            <div class="col-md-4">
+            <h2>Productivity</h2>
+            </div>
+            <div class="col-md-8">
+            <div class="row criteria">
+            <div class="col-6 criterion" data-content="Definitely, it's very reliable!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is there Wi-Fi?">
+            <i class="fa fa-fw fa-wifi"></i>
+            Stable Wi-Fi: {{ cafe_id.has_wifi }}
+            </div>
+            <div class="col-6 criterion" data-content="Definitely! (> 50% of seats have power sockets)" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is it easy to find power sockets?">
+            <i class="fa fa-fw fa-plug"></i>
+            Power sockets: {{ cafe_id.has_sockets}}
+            </div>
+            <div class="col-6 criterion" data-content="I can stay as long as I want!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="How long can you comfortably stay and work? ">
+            <i class="fa fa-fw fa-user-clock"></i>
+            Toilet :{{ cafe_id.has_toilet }}
+            </div>
+            <div class="col-6 criterion" data-content="All tables and chairs are work-friendly!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Are tables and chairs comfortable for work?">
+            <i class="fa fa-fw fa-pen-square"></i>
+            Work-friendly tables: {{ cafe_id.can_take_calls}}
+            </div>
+            <div class="col-6 criterion" data-content="Definitely!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is it quiet?">
+            <i class="fa fa-fw fa-volume-down"></i>
+            Quiet
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Definitely!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Can you comfortably make audio/video calls?">
+            <i class="fa fa-fw fa-headset"></i>
+            Video/audio calls
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <hr>
+            <div class="row">
+            <div class="col-md-4">
+            <h2>Community</h2>
+            </div>
+            <div class="col-md-8">
+            <div class="row criteria">
+            <div class="col-6 criterion" data-content="Definitely, almost everyone is working!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is it common to see other people working?">
+            <i class="fa fa-fw fa-laptop"></i>
+            People working
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Definitely! There's also a big community table!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Are there group tables (for 6+ people)?">
+            <i class="fa fa-fw fa-users"></i>
+            Group tables
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <hr>
+            <div class="row">
+            <div class="col-md-4">
+            <h2>Service</h2>
+            </div>
+            <div class="col-md-8">
+            <div class="row criteria">
+            <div class="col-6 criterion" data-content="Yes, and it's of high quality!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is coffee available?">
+            <i class="fa fa-fw fa-coffee"></i>
+            Coffee
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Only snacks, pastries, or salads" data-template="<div class='popover medium-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is food offered?">
+            <i class="fa fa-fw fa-utensils"></i>
+            Food
+            <div class="progress">
+            <div class="progress-bar medium">
+            <span class="sr-only">Medium</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Yes, but limited" data-template="<div class='popover medium-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Are there veggie options?">
+            <i class="fa fa-fw fa-leaf"></i>
+            Veggie
+            <div class="progress">
+            <div class="progress-bar medium">
+            <span class="sr-only">Medium</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Only a small selection (Beers, wines, ciders)" data-template="<div class='popover medium-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is alcohol offered?">
+            <i class="fa fa-fw fa-glass-martini"></i>
+            Alcohol
+            <div class="progress">
+            <div class="progress-bar medium">
+            <span class="sr-only">Medium</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Definitely!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Are credit cards accepted?">
+            <i class="fa fa-fw fa-credit-card"></i>
+            Credit cards
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <hr>
+            <div class="row">
+            <div class="col-md-4">
+            <h2>Space</h2>
+            </div>
+            <div class="col-md-8">
+            <div class="row criteria">
+            <div class="col-6 criterion" data-content="Definitely!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is the space full of natural light?">
+            <i class="fa fa-fw fa-sun"></i>
+            Natural light
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Yes, but without power sockets" data-template="<div class='popover medium-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is there an outdoor area? (Assuming nice weather.)">
+            <i class="fa fa-fw fa-tree"></i>
+            Outdoor area
+            <div class="progress">
+            <div class="progress-bar medium">
+            <span class="sr-only">Medium</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="It's large (more than 30 tables)" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="How large is the place?">
+            <i class="fa fa-fw fa-arrows-alt"></i>
+            Spacious
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Definitely, it's clean and easily accessible!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is there a restroom?">
+            <i class="fa fa-fw fa-toilet-paper"></i>
+            Restroom
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Definitely!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is it easily accessible with a wheelchair?">
+            <i class="fa fa-fw fa-wheelchair"></i>
+            Accessible
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Definitely, most or all areas are air conditioned!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is the place air conditioned?">
+            <i class="fa fa-fw fa-thermometer-half"></i>
+            Air conditioned
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="Definitely!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is it pet friendly?">
+            <i class="fa fa-fw fa-dog"></i>
+            Pet friendly
+            <div class="progress">
+            <div class="progress-bar high">
+            <span class="sr-only">High</span>
+            </div>
+            </div>
+            </div>
+            <div class="col-6 criterion" data-content="There's street parking nearby" data-template="<div class='popover medium-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" data-bs-original-title="Is there a parking space?">
+            <i class="fa fa-fw fa-car"></i>
+            Parking
+            <div class="progress">
+            <div class="progress-bar medium">
+            <span class="sr-only">Medium</span>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            </div>
+          <div class="col-md-5">
+            <hr class="d-block d-md-none">
+            <!-- Do you like working from here? -->
+            <div id="rate-productivity">
+            <p class="text-center" style="margin-bottom: 0.7rem;">Do you like working from here?</p>
+            <div class="row justify-content-center text-center">
+            <div class="col-3" data-content="It's uncomfortable for work" data-template="<div class='popover low-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" aria-label="No" data-bs-original-title="No">
+            <a class="red" href="/london/store-street-espresso-hammersmith/i_like_it?score=1"><i class="fa fa-heart-broken fa-3x"></i>
+            </a></div>
+            <div class="col-3" data-content="I got some work done" data-template="<div class='popover medium-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" aria-label="Yes" data-bs-original-title="Yes">
+            <a class="yellow" href="/london/store-street-espresso-hammersmith/i_like_it?score=2"><i class="fa fa-heart fa-3x"></i>
+            </a></div>
+            <div class="col-3" data-content="I feel very productive here!" data-template="<div class='popover high-border' role='tooltip'><div class='arrow'></div><div class='popover-header'></div><div class='popover-body'></div></div>" data-toggle="popover" aria-label="Definitely!" data-bs-original-title="Definitely!">
+            <a class="green selected" href="/london/store-street-espresso-hammersmith/i_like_it?score=3"><i class="fa fa-heart fa-3x"></i>
+            </a></div>
+            </div>
+            </div>
+            <hr>
+            <div id="information">
+            <!-- Hours -->
+            <div class="row no-gutters">
+            <div class="col-2 text-center">
+            <i class="far fa-fw fa-clock"></i>
+            </div>
+            <div class="col-10">
+            <div class="row no-gutters strong"><div class="col-2">Mon</div><div class="col">08:30 – 16:00</div></div><div class="row no-gutters"><div class="col-2">Tue</div><div class="col">08:30 – 16:30</div></div><div class="row no-gutters"><div class="col-2">Wed</div><div class="col">08:30 – 16:30</div></div><div class="row no-gutters"><div class="col-2">Thu</div><div class="col">08:30 – 16:30</div></div><div class="row no-gutters"><div class="col-2">Fri</div><div class="col">08:30 – 15:00</div></div><div class="row no-gutters"><div class="col-2">Sat</div><div class="col">Closed</div></div><div class="row no-gutters"><div class="col-2">Sun</div><div class="col">Closed</div></div>
+            </div>
+            </div>
+            <br>
+            <!-- Location -->
+            <div class="row no-gutters">
+            <div class="col-2 text-center">
+            <i class="fa fa-fw fa-map-marker-alt"></i>
+            </div>
+            <div class="col-10">
+            <a target="_blank" href="{{cafe_id.map_url}}">{{ cafe_id.location}}</a>
+            </div>
+            </div>
+            <br>
+            <!-- Website -->
+            <!-- Facebook -->
+            <!-- Instagram -->
+            </div>
+            <hr>
+            <!-- Missing or incorrect information? -->
+            <div class="report">
+            <p>Missing or incorrect information?</p>
+            <div class="row justify-content-center">
+            <div class="col-5 col-sm-6 col-lg-5">
+            <a class="btn btn-sm btn-default btn-block" href="/london/store-street-espresso-hammersmith/edit"><i class="fa fa-fw fa-edit"></i>
+            Update page
+            </a></div>
+            <div class="col-5 col-sm-6 col-lg-5">
+            <a class="btn btn-sm btn-default btn-block" href="/london/store-street-espresso-hammersmith/toggle_closed"><i class="far fa-fw fa-flag"></i>
+            Report closed
+            </a></div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>

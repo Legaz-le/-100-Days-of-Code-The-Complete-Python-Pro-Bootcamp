@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My to-do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% from "bootstrap5/form.html" import render_form %}
+</head>
+<body>
+        <header class="p-0 text-bg-dark">
+            <div class="container">
+              <div class="r-flex flex-wrap">
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+        </header>
+     <header class="py-3 mb-4 border-bottom">
+            <div class="container d-flex flex-wrap justify-content-center">
+              <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4"> My to-do list {{ date }}</span>
+              </a>
+            <ul>
+              <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Save This List</a></li>
+            </ul>
+            </div>
+     </header>
+     <section class="border-bottom">
+          {{render_form(form, novalidate=True, button_map={"submit": "primary" ,"placeholder":"Write you next task here"}) }}
+     </section>
+        <section>
+              <div class="list-group list-group-flush">
+                {% for do in list %}
+                <label class="list-group-item d-flex gap-3" style="cursor: not-allowed;">
+                      <input class="form-check-input flex-shrink-0" type="checkbox" value=""   style="font-size: 1.375em opacity: 0.6 cursor: not-allowed;">
+                      <span class="pt-1 form-checked-content">
+                        <strong>{{do.list }}</strong>
+                      </span>
+                     <a href="{{url_for('delete', list_id=do.id) }}">✘</a>
+                </label>
+                {% endfor %}
+             </div>
+        </section>
+</body>
+</html>
