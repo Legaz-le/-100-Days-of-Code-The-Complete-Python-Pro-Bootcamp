@@ -10,8 +10,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 PROMISED = 10000
 PROMISED_UP = 5000
 CHROME_DRIVER_PATH = "/user"
-X_EMAIL = "worldhaha@mail.ru"
-X_PASSWORD = "123456789Asd"
+X_EMAIL = "xxxxx"
+X_PASSWORD = "xxxxxx"
 
 class InternetSpeedXBot:
     def __init__(self):
