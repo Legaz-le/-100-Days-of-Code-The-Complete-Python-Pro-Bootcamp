@@ -67,7 +67,7 @@ API_TOKEN ="xxxxxx"
 ENDPOINT = "https://api.themoviedb.org/3/search/movie"
 MOVIE_DB_INFO_URL = "https://api.themoviedb.org/3/movie"
 MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
-API_KEY ="a16830f3160cc58852e0cf1a4a35e389"
+API_KEY ="xxxxx"
 header = {
     "accept": "application/json",
     "Authorization":f'Bearer{API_TOKEN}',
