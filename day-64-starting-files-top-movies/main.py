@@ -63,7 +63,7 @@ def delete():
     db.session.commit()
     return redirect(url_for('home'))
 
-API_TOKEN ="eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMTY4MzBmMzE2MGNjNTg4NTJlMGNmMWE0YTM1ZTM4OSIsIm5iZiI6MTczNDc5OTg3MC45MTYsInN1YiI6IjY3NjZmMWZlOTE5Mjg3ZWY1MzkxMDc1NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MOGuAA63uSAPYaAycbJ89LfPAiL1EAGSasQYCNLExXM"
+API_TOKEN ="xxxxxx"
 ENDPOINT = "https://api.themoviedb.org/3/search/movie"
 MOVIE_DB_INFO_URL = "https://api.themoviedb.org/3/movie"
 MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
