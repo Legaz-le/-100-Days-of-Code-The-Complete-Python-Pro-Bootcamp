@@ -1,0 +1,9 @@
+
+
+
+        <table> class="color-grid">
+            {% for color in colors %}
+            <tr><td style="background-color:#f0a800"></td><td>{{ color.hex }}</td><td>{{ "%.2f"|format(color.percentage) }}</td></tr>
+            {% endfor %}
+        </table>
+
