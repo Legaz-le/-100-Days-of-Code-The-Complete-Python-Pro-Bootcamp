@@ -4,9 +4,9 @@ from data_manager import DataManager
 from datetime import datetime
 from dotenv import load_dotenv
 load_dotenv()
-IATA_ENDPOINT = "https://test.api.amadeus.com/v1/reference-data/locations/cities"
+IATA_ENDPOINT = "xxxxxxxx"
 FLIGHT_ENDPOINT = "https://test.api.amadeus.com/v2/shopping/flight-offers"
-TOKEN_ENDPOINT = "https://test.api.amadeus.com/v1/security/oauth2/token"
+TOKEN_ENDPOINT = xxxxxx
 
 class FlightSearch:
 
