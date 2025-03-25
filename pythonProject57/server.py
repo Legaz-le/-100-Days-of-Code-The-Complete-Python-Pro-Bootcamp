@@ -3,7 +3,7 @@
 from flask import Flask,render_template
 import requests
 import regex
-API_KEY_FOR_GENDERIZE = "051337bf26dc55dfc120de3190a80b4d"
+API_KEY_FOR_GENDERIZE = "xxxxxx"
 ENDPOINT_GENDERIZE = "https://api.genderize.io"
 ENDPOINT_AGE = "https://api.agify.io"
 
